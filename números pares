@@ -1,0 +1,11 @@
+//verificar se um numero é par
+
+if (numero != null) {
+    if (numero % 2 == 0){
+        console.log("Número é par");
+    } else {
+        console.log("Número é impar");
+    } 
+} else { 
+    console.log("Número não definido");
+}
