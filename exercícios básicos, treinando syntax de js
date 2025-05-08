@@ -1,0 +1,9 @@
+// codigo para somar todos os numeros de 1 a 100
+
+let i = 0;
+let soma = 0;
+while (i <= 100){
+    soma += i;
+i++;
+}
+console.log(soma);
