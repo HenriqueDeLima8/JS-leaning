@@ -1,0 +1,11 @@
+function calcularMedia(notas){
+    let nDeNotas = notas.length;
+
+    let somaNotas = 0;
+    for(let i = 0; i < nDeNotas; i++){
+        somaNotas += notas[i];
+    }
+    
+    let mediaFinal = somaNotas/nDeNotas;       
+    return mediaFinal;
+}
