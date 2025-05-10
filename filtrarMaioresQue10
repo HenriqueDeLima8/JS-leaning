@@ -1,0 +1,11 @@
+function filtrarMaioresQue10(numeros) {
+    let maiores = [];
+
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] > 10) {
+            maiores.push(numeros[i]);
+        }
+    }
+
+    return maiores;
+}
