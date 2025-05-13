@@ -1,0 +1,29 @@
+class Pessoa{
+    constructor(nome, idade){
+    this.nome = nome;
+    this.idade = idade;
+    }
+}
+function listarMenoresDeIdade(pessoas) {
+    let listaDePessoasMenores = [];
+    for(let i = 0; i < pessoas.length; i++){
+        if (pessoas[i].idade < 18){
+            listaDePessoasMenores.push(pessoas[i]);
+        }
+
+    }
+    return listaDePessoasMenores;
+
+}
+    let inputPessoas = [
+        new Pessoa("Henrique",17),
+        new Pessoa("Eduarda", 51),
+        new Pessoa("flavia", 18),
+        new Pessoa("gabriel", 19),
+        new Pessoa("Edu", 16),
+        new Pessoa("jose", 12),
+
+
+];
+
+console.log(listarMenoresDeIdade(inputPessoas).map(p => p.nome));
