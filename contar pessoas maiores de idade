@@ -1,0 +1,27 @@
+class Pessoa {
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+}
+function contarPessoasMaiores(pessoas){
+    let totalDePessoas = 0;
+    for(let i = 0; i < pessoas.length; i++){
+        if(pessoas[i].idade >= 18){
+            totalDePessoas++;
+        }
+
+    }
+    return totalDePessoas;
+}
+
+const listaPessoas = [
+    new Pessoa(Maria,19),
+    new Pessoa(Henrique,17),
+    new Pessoa(Lau,18),
+    new Pessoa(Duda,14),
+    new Pessoa(Silvania,42)
+
+];
+
+console.log(contarPessoasMaiores(listaPessoas));
