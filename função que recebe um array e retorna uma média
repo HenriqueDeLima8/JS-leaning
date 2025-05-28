@@ -1,5 +1,5 @@
 function calcularMedia(notas){
-    let nDeNotas = notas.length;
+    let nDeNotas = notas.length; //comentario de 3 semanas depois de ter feito isso, eu não faço ideia de pq eu criei essa variavel ao inves de simplesmente usar notas.length
 
     let somaNotas = 0;
     for(let i = 0; i < nDeNotas; i++){
